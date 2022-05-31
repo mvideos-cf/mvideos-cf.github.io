@@ -50,5 +50,7 @@ var genres = [
 'musical',
 'screamo',
 'crunkcore',
-'rockNRoll'
+'rockNRoll',
+'indie',
+'alternative'
 ];
