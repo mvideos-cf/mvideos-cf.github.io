@@ -52,5 +52,6 @@ var genres = [
 'crunkcore',
 'rockNRoll',
 'indie',
-'alternative'
+'alternative',
+'nightcore'
 ];
