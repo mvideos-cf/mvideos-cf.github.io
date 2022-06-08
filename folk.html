@@ -38,14 +38,20 @@
 							</label>&emsp;
 						</tr>
 						<tr>
-							<button id="btn">Filter</button>
+							<button id="btn">Filter</button>&emsp;
+						</tr>|&emsp;
+						<tr>
+							<button id="sort" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>
+						<tr>
+							<button id="select" onClick="injectButtons()">&#9836;</button>&emsp;
 						</tr>
 					<br/>
 					<br/>
 				</div>
 				
 				<br/>
-				<table>
+				<table id="videos">
 					<tr>
 						<td><a href="https://www.youtube.com/watch?v=TE1qFF54MTE" target="_blank"><img src="i/s1270.jpg"><br/>The Avett Brothers - Slight Figure Of Speech</a></td>
 						<td><a href="https://www.youtube.com/watch?v=sDh-n9Un-6g" target="_blank"><img src="i/s1269.jpg"><br/>The Avett Brothers - Slight Figure Of Speech</a></td>
@@ -91,4 +97,7 @@
 			<br/>
 		</center>
 	</body>
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
 </html>

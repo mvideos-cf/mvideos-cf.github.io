@@ -38,16 +38,21 @@
 							</label>&emsp;
 						</tr>
 						<tr>
-							<button id="btn">Filter</button>
+							<button id="btn">Filter</button>&emsp;
+						</tr>|&emsp;
+						<tr>
+							<button id="sort" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>
+						<tr>
+							<button id="select" onClick="injectButtons()">&#9836;</button>&emsp;
 						</tr>
 					<br/>
 					<br/>
 				</div>
 				
 				<br/>
-				<table>	
-					<tr>
-						
+				<table id="videos">	
+					<tr>						
 						<td><div class="playlistViolet"><a href="https://www.youtube.com/watch?v=xGiBiHocSZM" target="_blank"><img src="i/s1100.jpg" width="278" ><br/>Redfoo - New Thang</a></div></td>
 						<td class="explicit"><div class="playlistViolet"><a href="https://www.youtube.com/watch?v=bw5pi9nUGJ8" target="_blank"><img src="i/s1079.jpg" width="278" ><br/>Elliphant - Only Getting Younger ft. Skrillex</a></div></td>
 						<td><div class="playlistViolet"><a href="https://www.youtube.com/watch?v=YWpTQM-CCTM" target="_blank"><img src="i/s1065.jpg" width="278" ><br/>Big Sean - I Know ft. Jhené Aiko </a></div></td>
@@ -135,5 +140,7 @@
 			<br/>
 		</center>
 	</body>
-	<script src="hide.js"></script>
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
 </html>

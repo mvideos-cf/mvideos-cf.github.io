@@ -38,14 +38,20 @@
 							</label>&emsp;
 						</tr>
 						<tr>
-							<button id="btn">Filter</button>
+							<button id="btn">Filter</button>&emsp;
+						</tr>|&emsp;
+						<tr>
+							<button id="sort" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>
+						<tr>
+							<button id="select" onClick="injectButtons()">&#9836;</button>&emsp;
 						</tr>
 					<br/>
 					<br/>
 				</div>
 				
 				<br/>
-				<table>
+				<table id="videos">
 					<tr>
 						<td><a href="https://www.youtube.com/watch?v=6jQ_bOP0HfY" target="_blank"><img src="i/s2236.jpg"><br/>808 State - Pacific State</a></td>
 						<td><a href="https://www.youtube.com/watch?v=qdpXxGPqW-Y" target="_blank"><img src="i/s32.2.jpg"><br/>Alan Walker - Faded</a></td>
@@ -195,5 +201,7 @@
 			<br/>
 		</center>
 	</body>
-	<script src="hide.js"></script>
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
 </html>
