@@ -76,3 +76,6 @@ img {
 .noContrast{
 	filter: contrast(100%);
 }
+#content { 
+	z-index: 1; 
+}
