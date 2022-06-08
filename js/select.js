@@ -64,7 +64,7 @@ function injectButtons()
 				lines[i] = lines[i].replace('</a></div></td>',"</a><br><button class='add' onclick='add(this)'>+</button></div></td>");
 			}
 		table.innerHTML = lines.join('\n');
-		table.parentElement.innerHTML += "<table><td style='width:456px'></td><td style='width:700px'><p id='playlist'></p></td><td></td></table><button onclick='play()'>Play</button>&emsp;";
+		//table.parentElement.innerHTML += "<table><td style='width:456px'></td><td style='width:700px'><p id='playlist'></p></td><td></td></table><button onclick='play()'>Play</button>&emsp;";
 		isSelected=true;
 		document.getElementById('select').style.backgroundColor = 'LightSkyBlue';
 	}
