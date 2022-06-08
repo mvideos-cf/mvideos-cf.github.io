@@ -50,14 +50,17 @@
 				</div>
 				
 				<br/>
-				<table id="results">
+				<table id="videos">
 					<div id="searching">searching...</div>
 				</table>
-			</div>
+			</div><br/>
 			<br/>
 			<br/>
 			<br/>
-			<br/>
+		<p id='playlist'></p>
+		<br>
+		<button id='playButton' onclick='play()'>Play</button>
+		<br>
 		</center>
 	</body>
 	
@@ -93,7 +96,7 @@ function readFiles()
 }
 function search(query)
 {
-	const table = document.getElementById("results");
+	const table = document.getElementById("videos");
 	query=query.replaceAll("+"," ");
 	query=query.replaceAll("%2F","/");
 	query=query.replaceAll("%24","$");
@@ -135,8 +138,8 @@ function search(query)
 	}	
 	
 	document.getElementById("searching").innerHTML = "";
-	document.getElementById("results").innerHTML = numResults+" results<br/>"+document.getElementById("results").innerHTML ;
-	document.getElementById("results").innerHTML += "</tr></tbody>";
+	document.getElementById("videos").innerHTML = numResults+" results<br/>"+document.getElementById("videos").innerHTML ;
+	document.getElementById("videos").innerHTML += "</tr></tbody>";
 	
 	Array.prototype.forEach.call(document.getElementsByClassName("mature"), function(el) {
 			el.style.visibility = "hidden";			
@@ -146,9 +149,6 @@ readFiles();
 //loadTableData();
 </script>
 	<script src="js/hide.js"></script>
-	<script src="js/select.js"></script>
-	<script src="js/sort.js"></script>
-	<script src="js/sort.js"></script>
 	<script src="js/select.js"></script>
 	<script src="js/sort.js"></script>
 </html>

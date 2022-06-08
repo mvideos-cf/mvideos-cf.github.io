@@ -36,3 +36,5 @@ btn.onclick = () => {
 		});
 	}
 };
+document.getElementById("playlist").style.visibility = "hidden";
+document.getElementById("playButton").style.visibility = "hidden";
