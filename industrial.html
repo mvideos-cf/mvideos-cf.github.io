@@ -38,14 +38,20 @@
 							</label>&emsp;
 						</tr>
 						<tr>
-							<button id="btn">Filter</button>
+							<button id="btn">Filter</button>&emsp;
+						</tr>|&emsp;
+						<tr>
+							<button id="sort" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>
+						<tr>
+							<button id="select" onClick="injectButtons()">&#9836;</button>&emsp;
 						</tr>
 					<br/>
 					<br/>
 				</div>
 				
 				<br/>
-				<table>
+				<table id="videos">
 					<tr>
 						<td><a href="https://www.youtube.com/watch?v=iTxOKsyZ0Lw" target="_blank"><img src="i/s1341.jpg"><br/>The Chemical Brothers - Block Rockin' Beats</a></td>
 						<td><a href="https://www.youtube.com/watch?v=t6twhXA1Gyw" target="_blank"><img src="i/s1291.jpg"><br/>The Crystal Method - Busy Child</a></td>
@@ -76,6 +82,8 @@
 			<br/>
 		</center>
 	</body>
-	<script src="hide.js"></script>
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
 </html>
 

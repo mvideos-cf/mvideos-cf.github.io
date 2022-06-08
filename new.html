@@ -37,14 +37,17 @@
 							</label>&emsp;
 						</tr>
 						<tr>
-							<button id="btn">Filter</button>
+							<button id="btn">Filter</button>&emsp;
+						</tr>|&emsp;
+						<tr>
+							<button id="select" onClick="injectButtons()">&#9836;</button>&emsp;
 						</tr>
 					<br/>
 					<br/>
 				</div>
 				
 				<br/>
-				<table id="results">
+				<table id="videos">
 					<div id="searching">searching...</div>
 				</table>
 			</div>
@@ -53,7 +56,7 @@
 			<br/>
 			<br/>
 		</center>
-	<script src="genres.js"></script>
+	<script src="js/genres.js"></script>
 	<script>
 	
 	
@@ -106,7 +109,7 @@ function sortArrays(arrays, comparator = (a, b) => (a < b) ? -1 : (a > b) ? 1 : 
 }
 function getNew()
 {
-	const table = document.getElementById("results");
+	const table = document.getElementById("videos");
 	var c = 0;
 	let row;
 	var list;
@@ -141,14 +144,15 @@ function getNew()
 			data.classList.add('mature');
 		}
 		data.innerHTML = newSongs[i];
+		data.parentElement.innerHTML+='\n';
 		numResults++;
 		c++;
 		if(c>5)
 			c=0;
 	}
 	document.getElementById("searching").innerHTML = "";
-	document.getElementById("results").innerHTML = numResults+" results<br/>"+document.getElementById("results").innerHTML ;
-	document.getElementById("results").innerHTML += "</tr></tbody>";
+	document.getElementById("videos").innerHTML = numResults+" videos<br/>"+document.getElementById("videos").innerHTML ;
+	document.getElementById("videos").innerHTML += "</tr></tbody>";
 	Array.prototype.forEach.call(document.getElementsByClassName("mature"), function(el) {
 			el.style.visibility = "hidden";			
 		});
@@ -156,7 +160,10 @@ function getNew()
 readFiles();
 //loadTableData();
 </script>
-	<script src="hide.js"></script>
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
+	<script src="js/sort.js"></script>
 	
 	</body>
 </html>

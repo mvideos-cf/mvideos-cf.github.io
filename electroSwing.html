@@ -38,14 +38,20 @@
 							</label>&emsp;
 						</tr>
 						<tr>
-							<button id="btn">Filter</button>
+							<button id="btn">Filter</button>&emsp;
+						</tr>|&emsp;
+						<tr>
+							<button id="sort" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>
+						<tr>
+							<button id="select" onClick="injectButtons()">&#9836;</button>&emsp;
 						</tr>
 					<br/>
 					<br/>
 				</div>
 				
 				<br/>
-				<table>
+				<table id="videos">
 					<tr>
 						<td><a href="https://www.youtube.com/watch?v=A7lxd7RL1To" target="_blank"><img src="i/s2947.jpg"><br/>Caravan Palace - Dramophone</a></td>
 						<td><a href="https://www.youtube.com/watch?v=fBGSJ3sbivI" target="_blank"><img src="i/s2950.jpg"><br/>Caravan Palace - Rock It For Me</a></td>
@@ -72,5 +78,7 @@
 			<br/>
 		</center>
 	</body>
-	<script src="hide.js"></script>
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
 </html>

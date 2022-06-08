@@ -38,14 +38,20 @@
 							</label>&emsp;
 						</tr>
 						<tr>
-							<button id="btn">Filter</button>
+							<button id="btn">Filter</button>&emsp;
+						</tr>|&emsp;
+						<tr>
+							<button id="sort" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>
+						<tr>
+							<button id="select" onClick="injectButtons()">&#9836;</button>&emsp;
 						</tr>
 					<br/>
 					<br/>
 				</div>
 				
 				<br/>
-				<table>
+				<table id="videos">
 					<tr>
 						<td><a href="https://www.youtube.com/watch?v=tYTHbgegru8" target="_blank"><img src="i/s34.2.jpg"><br/>Alex Campbell – Gemini (John Petrucci)</a></td>
 						<td><a href="https://www.youtube.com/watch?v=mjF1rmSV1dM" target="_blank"><img src="i/s1232.jpg"><br/>ARCH ENEMY - The Eagle Flies Alone	</a></td>
@@ -264,5 +270,7 @@
 			<br/>
 		</center>
 	</body>
-	<script src="hide.js"></script>
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
 </html>

@@ -38,14 +38,21 @@
 							</label>&emsp;
 						</tr>
 						<tr>
-							<button id="btn">Filter</button>
+							<button id="btn">Filter</button>&emsp;
+						</tr>
+						|&emsp;
+						<tr>
+							<button id="sort" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>
+						<tr>
+							<button id="select" onClick="injectButtons()">&#9836;</button>
 						</tr>
 					<br/>
 					<br/>
 				</div>
 				
 				<br/>
-				<table>
+				<table id="videos">
 					<tr>
 								<td><a href="https://www.youtube.com/watch?v=EKF6ghfcQic" target="_blank"><img src="i/s1018.2.jpg"><br/>Avril Lavigne - Head Above Water</a></td>
 								<td><a href="https://www.youtube.com/watch?v=j25JqWgjDF4" target="_blank"><img src="i/s1019.2.jpg"><br/>Big Daddy Weave - I Know	</a></td>
@@ -74,5 +81,7 @@
 			<br/>
 		</center>
 	</body>
-	<script src="hide.js"></script>	
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
 </html>
