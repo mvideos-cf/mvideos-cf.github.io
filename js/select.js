@@ -3,7 +3,6 @@ var titlesList = [];
 var isSelected = false;
 function add(obj)
 {
-	
 	var youtubeUrl = String(obj.previousSibling.previousSibling);
 	id = youtubeUrl.substring(youtubeUrl.length-11);
 	if(!list.includes(id))

@@ -38,6 +38,9 @@
 						</tr>
 						<tr>
 							<button id="btn">Filter</button>&emsp;
+						</tr>						
+						<tr>
+							<button id="select" onClick="injectButtons()">&#9836;</button>
 						</tr>
 					<br/>
 					<br/>
@@ -124,6 +127,7 @@ function search(query)
 					data.classList.add('mature');
 				}
 				data.innerHTML = list[i];
+				data.parentElement.innerHTML+='\n';
 				numResults++;
 				c++;
 				if(c>5)
