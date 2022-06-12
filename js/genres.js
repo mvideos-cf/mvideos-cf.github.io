@@ -24,7 +24,7 @@ var genres = [
 'industrial',
 'international',
 'jazz',
-'liveShows',
+'live-shows',
 'melbourne-bounce',
 'melodic-dubstep',
 'metal',
