@@ -14,7 +14,7 @@ var genres = [
 'electronic',
 'folk',
 'funk',
-'futureBass',
+'future-bass',
 'glitch',
 'grunge',
 'gypsy-punk',
