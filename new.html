@@ -18,9 +18,9 @@
 							<b>NEW</b>&emsp;
 						</tr>
 						<tr>
-							<form action="search.html">
-								SEARCH 
-								<input name="q" size="40" placeholder="3000+ videos to search from...">
+							<form action="search">
+								 
+								<input name="q" size="40" placeholder="3000+ videos to  from...">
 								<input type="submit" value=">">
 							</form>&emsp;
 						</tr>
@@ -48,7 +48,7 @@
 				
 				<br/>
 				<table id="videos">
-					<div id="searching">searching...</div>
+					<div id="ing">ing...</div>
 				</table>
 			</div>
 			<br/>
@@ -155,7 +155,7 @@ function getNew()
 		if(c>5)
 			c=0;
 	}
-	document.getElementById("searching").innerHTML = "";
+	document.getElementById("ing").innerHTML = "";
 	document.getElementById("videos").innerHTML = numResults+" videos<br/>"+document.getElementById("videos").innerHTML ;
 	document.getElementById("videos").innerHTML += "</tr></tbody>";
 	Array.prototype.forEach.call(document.getElementsByClassName("mature"), function(el) {

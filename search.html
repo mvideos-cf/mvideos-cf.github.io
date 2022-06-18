@@ -15,12 +15,12 @@
 					<br/>
 					<table>
 						<tr>
-							<b>SEARCH</b>&emsp;
+							<b></b>&emsp;
 						</tr>
 						<tr>
-							<form action="search.html">
-								SEARCH 
-								<input name="q" size="40" placeholder="3000+ videos to search from...">
+							<form action="search">
+								 
+								<input name="q" size="40" placeholder="3000+ videos to  from...">
 								<input type="submit" value=">">
 							</form>&emsp;
 						</tr>
@@ -48,7 +48,7 @@
 				
 				<br/>
 				<table id="videos">
-					<div id="searching">searching...</div>
+					<div id="ing">ing...</div>
 				</table>
 			</div><br/>
 			<br/>
@@ -85,14 +85,14 @@ function updateFile(data)
 	files.push(data);
 	numFiles++;
 	if(numFiles == genres.length)
-		search(getSecondPart(window.location.href));
+		(getSecondPart(window.location.href));
 }
 function readFiles()
 {
 	for (var j = 0 ; j < genres.length; j++) 
 		readTextFile(genres[j]+".html");
 }
-function search(query)
+function (query)
 {
 	const table = document.getElementById("videos");
 	query=query.replaceAll("+"," ");
@@ -136,7 +136,7 @@ function search(query)
 		}		
 	}	
 	
-	document.getElementById("searching").innerHTML = "";
+	document.getElementById("ing").innerHTML = "";
 	document.getElementById("videos").innerHTML = numResults+" results<br/>"+document.getElementById("videos").innerHTML ;
 	document.getElementById("videos").innerHTML += "</tr></tbody>";
 	
