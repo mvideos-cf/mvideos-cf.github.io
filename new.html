@@ -48,7 +48,7 @@
 				
 				<br/>
 				<table id="videos">
-					<div id="ing">ing...</div>
+					<div id="loading">loading...</div>
 				</table>
 			</div>
 			<br/>
@@ -155,7 +155,7 @@ function getNew()
 		if(c>5)
 			c=0;
 	}
-	document.getElementById("ing").innerHTML = "";
+	document.getElementById("loading").innerHTML = "";
 	document.getElementById("videos").innerHTML = numResults+" videos<br/>"+document.getElementById("videos").innerHTML ;
 	document.getElementById("videos").innerHTML += "</tr></tbody>";
 	Array.prototype.forEach.call(document.getElementsByClassName("mature"), function(el) {
