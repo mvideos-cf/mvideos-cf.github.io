@@ -15,7 +15,7 @@
 					<br/>
 					<table>
 						<tr>
-							<b></b>&emsp;
+							<b>SEARCH</b>&emsp;
 						</tr>
 						<tr>
 							<form action="search">
@@ -92,7 +92,7 @@ function readFiles()
 	for (var j = 0 ; j < genres.length; j++) 
 		readTextFile(genres[j]+".html");
 }
-function (query)
+function search(query)
 {
 	const table = document.getElementById("videos");
 	query=query.replaceAll("+"," ");
