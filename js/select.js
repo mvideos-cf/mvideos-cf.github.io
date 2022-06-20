@@ -1,13 +1,13 @@
-var list = [];
+var playlist = [];
 var titlesList = [];
 var isSelected = false;
 function add(obj)
 {
 	var youtubeUrl = String(obj.previousSibling.previousSibling);
 	id = youtubeUrl.substring(youtubeUrl.length-11);
-	if(!list.includes(id))
+	if(!playlist.includes(id))
 	{
-		list.push(id);
+		playlist.push(id);
 		var title = obj.previousSibling.previousSibling.innerHTML.split('.jpg"><br>')[1];
 		titlesList.push(title);
 		obj.innerHTML='-';
@@ -15,14 +15,14 @@ function add(obj)
 	else 
 	{
 		//remove id
-		var index = list.indexOf(id);
+		var index = playlist.indexOf(id);
 		if (index > -1) {
-			list.splice(index, 1);
+			playlist.splice(index, 1);
 			titlesList.splice(index, 1);
 			obj.innerHTML='+';
 		}
 	}
-	obj.style.backgroundColor=(list.includes(id)?'LightSkyBlue':'lightgrey');
+	obj.style.backgroundColor=(playlist.includes(id)?'LightSkyBlue':'lightgrey');
 	
 	document.getElementById('playlist').innerHTML='';
 	for(var i = 0 ; i < titlesList.length ; i ++)
@@ -33,11 +33,11 @@ function add(obj)
 }
 function play()
 {
-	if(list.length >0)
+	if(playlist.length >0)
 	{
 		url = 'http://www.youtube.com/watch_videos?video_ids=';
-		for(var i = 0 ; i < list.length ; i++)
-			url += list[i]+',';
+		for(var i = 0 ; i < playlist.length ; i++)
+			url += playlist[i]+',';
 		window.open(url);
 	}
 	else 
