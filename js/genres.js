@@ -7,7 +7,6 @@ var genres = [
 'classical',
 'comedy',
 'country',
-'covers',
 'drum-and-bass',
 'dubstep',
 'electro-house',
@@ -53,5 +52,6 @@ var genres = [
 'rock-and-roll',
 'indie',
 'alternative',
-'nightcore'
+'nightcore',
+'covers'
 ];
