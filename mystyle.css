@@ -57,6 +57,7 @@ body{
 td {
   vertical-align: top;
   width:288px;
+  color:grey;
 }
 #artistTable{
   vertical-align: top;
