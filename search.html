@@ -96,6 +96,7 @@ function search(query)
 {
 	const table = document.getElementById("videos");
 	query=query.replaceAll("+"," ");
+	query=query.replaceAll("%27","+");
 	query=query.replaceAll("%2F","/");
 	query=query.replaceAll("%24","$");
 	var queryWords = query.toLowerCase().split(' ');
