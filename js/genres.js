@@ -5,7 +5,6 @@ var genres = [
 'chillhop',
 'christian',
 'classical',
-'comedy',
 'country',
 'drum-and-bass',
 'dubstep',
@@ -53,5 +52,6 @@ var genres = [
 'indie',
 'alternative',
 'nightcore',
-'covers'
+'comedy',
+'covers',
 ];
