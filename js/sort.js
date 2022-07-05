@@ -4,6 +4,7 @@ function sortTable() {
 	
 	if(!isSorted)
 	{	
+		document.getElementById("sort").title = "Sort Alphabetically";
 		var list = table.innerHTML.split('\n');
 		var newSongs =[];
 		var newSongsIndices=[];
