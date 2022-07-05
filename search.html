@@ -90,7 +90,7 @@ function updateFile(data)
 function readFiles()
 {
 	for (var j = 0 ; j < genres.length; j++) 
-		readTextFile(genres[j]+".html");
+		readTextFile("https://www.mvideos.cf/"+genres[j]+".html");
 }
 function search(query)
 {
@@ -107,10 +107,14 @@ function search(query)
 		list = files[j].split('\n');
 		for(var i = 0 ; i <list.length;i++)
 		{	
+			var current = list[i];
+			if(current.includes('target="_blank"')==false)
+				continue;
 			var wordCounter = 0;
 			for(var k = 0 ; k <queryWords.length;k++)
 			{
-				if(list[i].includes('target="_blank"') && list[i].toLowerCase().includes(queryWords[k]))
+				
+				if(current.toLowerCase().includes(queryWords[k]))
 					wordCounter++
 			}
 			if(wordCounter==queryWords.length)
@@ -119,15 +123,15 @@ function search(query)
 					row= table.insertRow();
 				
 				let data = row.insertCell(c);
-				if(list[i].includes("'explicit'") ||list[i].includes('"explicit"') )
+				if(current.includes("'explicit'") ||current.includes('"explicit"') )
 				{
 					data.classList.add('explicit');
 				}
-				if(list[i].includes("'mature'") ||list[i].includes('"mature"') )
+				if(current.includes("'mature'") ||current.includes('"mature"') )
 				{
 					data.classList.add('mature');
 				}
-				data.innerHTML = list[i];
+				data.innerHTML = current;
 				data.parentElement.innerHTML+='\n';
 				numResults++;
 				c++;
