@@ -41,6 +41,11 @@ body{
   border-color: LightSkyBlue;
   border-width: thick;
 }
+.playlistRoyalBlue{
+  border-style: solid;
+  border-color: RoyalBlue;
+  border-width: thick;
+}
 .playlistViolet{
   border-style: solid;
   border-color: Violet;
