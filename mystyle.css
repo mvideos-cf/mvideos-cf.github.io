@@ -77,7 +77,7 @@ a.specialCategory{
 }
 img {
   border-radius: 2%;
-  filter: saturate(100%) brightness(107%) contrast(85%);
+  filter: saturate(100%) brightness(107%) contrast(90%);
 }
 .noContrast{
 	filter: contrast(100%);
