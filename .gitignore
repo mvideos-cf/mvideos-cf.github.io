@@ -1,6 +1,7 @@
 *.py
 *.bat
 *.txt
+.htaccess
 Thumbs.db
 i/Thumbs.db
 js/Thumbs.db
