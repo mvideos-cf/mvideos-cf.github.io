@@ -17,56 +17,61 @@ body{
 	color: grey;
 }
 .playlistRed{
-  border-style: solid;
-  border-color: red;
-  border-width: thick;
+	border-style: solid;
+	border-color: red;
+	border-width: thick;
 }
 .playlistOrange{
-  border-style: solid;
-  border-color: Orange;
-  border-width: thick;
+	border-style: solid;
+	border-color: Orange;
+	border-width: thick;
 }
 .playlistYellow{
-  border-style: solid;
-  border-color: Yellow;
-  border-width: thick;
+	border-style: solid;
+	border-color: Yellow;
+	border-width: thick;
 }
 .playlistGreen{
-  border-style: solid;
-  border-color: Green;
-  border-width: thick;
+	border-style: solid;
+	border-color: Green;
+	border-width: thick;
 }
 .playlistLightSkyBlue{
-  border-style: solid;
-  border-color: LightSkyBlue;
-  border-width: thick;
+	border-style: solid;
+	border-color: LightSkyBlue;
+	border-width: thick;
 }
 .playlistRoyalBlue{
-  border-style: solid;
-  border-color: RoyalBlue;
-  border-width: thick;
+	border-style: solid;
+	border-color: RoyalBlue;
+	border-width: thick;
 }
 .playlistViolet{
-  border-style: solid;
-  border-color: Violet;
-  border-width: thick;
+	border-style: solid;
+	border-color: Violet;
+	border-width: thick;
+}
+.playlistTurquoise{
+	border-style: solid;
+	border-color: Turquoise;
+	border-width: thick;
 }
 .playlistBlack{
-  border-style: solid;
-  border-color: Black;
-  border-width: thick;
+	border-style: solid;
+	border-color: Black;
+	border-width: thick;
 }
 .leftAlign{
 	text-align: left;
 }
 td {
-  vertical-align: top;
-  width:288px;
-  color:grey;
+	vertical-align: top;
+	width:288px;
+	color:grey;
 }
 #artistTable{
-  vertical-align: top;
-  width:400px;
+	vertical-align: top;
+	width:400px;
 }
 a.specialCategory{
 	font-size: large;    
@@ -76,12 +81,16 @@ a.specialCategory{
 	padding: .4em .75em;
 }
 img {
-  border-radius: 2%;
-  filter: saturate(100%) brightness(107%) contrast(90%);
+	border-radius: 2%;
+	filter: saturate(100%) brightness(107%) contrast(90%);
 }
 .noContrast{
 	filter: contrast(100%);
 }
 #playButton { 
 	z-index: 2147483647; 
+}
+.footer{
+	width: 1756px;
+	padding: 6px;
 }
