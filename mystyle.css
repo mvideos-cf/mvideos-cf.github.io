@@ -56,6 +56,11 @@ body{
 	border-color: Turquoise;
 	border-width: thick;
 }
+.playlistLimeGreen{
+	border-style: solid;
+	border-color: Lime;
+	border-width: thick;
+}
 .playlistBlack{
 	border-style: solid;
 	border-color: Black;
